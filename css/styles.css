@@ -7,6 +7,7 @@
     --background-color: #F5F4FA;
     --project-border-color: #EEEEEE;
     --footer-background-color: #2F303A;
+    --icon-fill: #AFB1B8;
     --white: #ffffff;
 }
 
@@ -288,6 +289,32 @@ img {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.clients-item {
+    padding: 16px 32px;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    color: var(--icon-fill);
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.clients-item svg {
+    width: 105px;
+    height: 60px;
+    fill: currentColor;
 }
 
 /* Стилі футера */
