@@ -28,8 +28,20 @@
         </ul>
       </nav>
       <ul class="contacts-list list">
-        <li><a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="contacts-item">
+          <a class="contacts-link link" href="mailto:info@devstudio.com">
+            <svg>
+              <use href="./image/icons/symbol-defs.svg#envelope"></use>
+            </svg>
+            info@devstudio.com</a>
+        </li>
+        <li class="contacts-item">
+          <a class="contacts-link link" href="tel:+380961111111">
+            <svg>
+              <use href="./image/icons/symbol-defs.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a>
+        </li>
       </ul>
     </div>
   </header>
@@ -56,8 +68,8 @@
         </ul>
         <ul class="project-list list flex-container">
           <li class="project-item">
-            <a class="link" href="http://google.com"><img class="projects-image" src="./image/portfolio/techno.jpg"
-                alt="Веб-страница открыта на ноутбуке" width="370" />
+            <a class="project-link link" href="http://google.com"><img class="projects-image"
+                src="./image/portfolio/techno.jpg" alt="Веб-страница открыта на ноутбуке" width="370" />
               <div class="project-description">
                 <h2 class="project-title">Технокряк</h2>
                 <p class="project-text">Веб-сайт</p>
@@ -141,15 +153,50 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container footer-container">
-      <a class="logo link" href="./index.html">Web<span class="logo-footer">Studio</span></a>
-      <address class="adress">
-        <ul class="adress-list list">
-          <li class="adress-item link">г. Киев, пр-т Леси Украинки, 26</li>
-          <li class="adress-item"><a class="adress-link link" href="mailto:info@example.com">info@example.com</a></li>
-          <li class="adress-item"><a class="adress-link link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+    <div class="container footer-container flex-container">
+      <div class="logo-adress">
+        <a class="logo link" href="./index.html">Web<span class="logo-footer">Studio</span></a>
+        <address class="adress">
+          <ul class="adress-list list">
+            <li class="adress-item link">г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="adress-item"><a class="adress-link link" href="mailto:info@example.com">info@example.com</a></li>
+            <li class="adress-item"><a class="adress-link link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
+      <div class="subscribe">
+        <h2 class="subscribe-title">Присоединяйтесь</h2>
+        <ul class="subscribe-list list flex-container">
+          <li class="subscribe-item">
+            <a href="" class="subscribe-link">
+              <svg>
+                <use href="./image/icons/symbol-defs.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="subscribe-item">
+            <a href="" class="subscribe-link link">
+              <svg>
+                <use href="./image/icons/symbol-defs.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="subscribe-item">
+            <a href="" class="subscribe-link">
+              <svg>
+                <use href="./image/icons/symbol-defs.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="subscribe-item">
+            <a href="" class="subscribe-link">
+              <svg>
+                <use href="./image/icons/symbol-defs.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
-      </address>
+      </div>
     </div>
   </footer>
 </body>
