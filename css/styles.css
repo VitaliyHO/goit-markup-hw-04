@@ -68,7 +68,7 @@ img {
 .navigation {
     display: flex;
     align-items: center;
-    margin-right: 330px;
+    margin-right: 270px;
 }
 
 .logo {
@@ -152,6 +152,18 @@ img {
     color: var(--accent-color);
 }
 
+.contacts-link svg {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+}
+
+.contacts-link::before {
+    content: ;
+    background-image: url(href="./image/icons/symbol-defs.svg#envelope");
+}
+
 /*Стилі головної сторінки */
 
 .hero {
@@ -159,7 +171,11 @@ img {
     padding-right: 15px;
     padding-bottom: 200px;
     padding-left: 15px;
-    background-color: var(--footer-background-color);
+    background-color: #C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../image/background/hero-background.jpg');
+    background-size: 1600px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .page-title {
@@ -218,6 +234,18 @@ img {
     width: 270px;
 }
 
+.prefrence-icon {
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    border-radius: 4px;
+    background-color: var(--background-color);
+}
+
+.prefrence-icon svg {
+    width: 70px;
+    height: 70px;
+}
+
 .preference-title {
     margin-bottom: 10px;
 
@@ -258,8 +286,8 @@ img {
 
 .team-item {
     background-color: var(--white);
-    border-radius: 0 0 4px 4px;
-    box-shadow: #acacac 0 1px 2px 1px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item:not(:last-child) {
@@ -285,10 +313,36 @@ img {
 }
 
 .team-text {
+    margin-bottom: 15px;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.social-link {
+    display: block;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--icon-fill);
+}
+
+.social-link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link:hover,
+.social-link:focus {
+    color: var(--white);
+    background-color: var(--accent-color);
+}
+
+.social-link svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 
 .clients-item {
@@ -309,6 +363,7 @@ img {
 .clients-item:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
+    cursor: pointer;
 }
 
 .clients-item svg {
@@ -321,14 +376,17 @@ img {
 
 .footer {
     background-color: var(--footer-background-color);
-    display: flex;
-    justify-content: center;
 }
 
 .footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 1200px;
+    justify-content: start;
+    align-items: baseline;
+}
+
+.logo-adress {
+    margin-right: 70px;
 }
 
 .footer a.logo {
@@ -363,6 +421,45 @@ img {
 
 .adress-link:hover {
     color: var(--accent-color);
+}
+
+.subscribe {}
+
+.subscribe-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.subscribe-list {}
+
+.subscribe-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.subscribe-link {
+    display: block;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .1);
+    color: var(--white);
+}
+
+.subscribe-link:hover,
+.subscribe-link:focus {
+    background-color: var(--accent-color);
+}
+
+.subscribe-link svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 
 /* Стилі сторінки Portfolio */
@@ -414,6 +511,13 @@ img {
 
 .project-item:nth-last-child(-n+3) {
     margin-bottom: 0;
+}
+
+.project-item:hover,
+.project-item:focus {
+    /* border: 1px solid #EEEEEE; */
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 .project-description {
