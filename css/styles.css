@@ -341,7 +341,7 @@ img {
     color: var(--icon-fill);
 }
 
-.social-link:not(:last-child) {
+.social-item:not(:last-child) {
     margin-right: 10px;
 }
 
