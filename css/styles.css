@@ -136,7 +136,7 @@ img {
 }
 
 .contacts-link {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -157,6 +157,12 @@ img {
     width: 16px;
     height: 12px;
     fill: currentColor;
+    align-items: center;
+}
+
+.contacts-link .smartphone {
+    width: 10px;
+    height: 16px;
 }
 
 .contacts-link::before {
@@ -235,8 +241,11 @@ img {
 }
 
 .prefrence-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
     margin-bottom: 30px;
-    padding: 25px 100px;
     border-radius: 4px;
     background-color: var(--background-color);
 }
@@ -245,6 +254,8 @@ img {
     width: 70px;
     height: 70px;
 }
+
+.prefrence-icon use {}
 
 .preference-title {
     margin-bottom: 10px;
@@ -321,8 +332,9 @@ img {
 }
 
 .social-link {
-    display: block;
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -346,7 +358,9 @@ img {
 }
 
 .clients-item {
-    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 90px;
     border: 1px solid #AFB1B8;
@@ -442,8 +456,9 @@ img {
 }
 
 .subscribe-link {
-    display: block;
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
